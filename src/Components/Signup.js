@@ -9,7 +9,7 @@ const Signup = () => {
 	return (
 		<div>
 			<Container className='signup'>
-				<Row>
+				<Row className='signupintro'>
 					<Col>
 						<h1>Sign Up</h1>
 						<h3>Create an account to access the full version of with all the features.</h3>

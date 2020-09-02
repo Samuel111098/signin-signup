@@ -9,18 +9,18 @@ const Signin = () => {
 	return (
 		<div>
 			<Container className='signin'>
-				<Row>
+				<Row className='signinintro'>
 					<Col>
 						<Form>
 							<h1>Login</h1>
 							<h4>Welcome back! Please login to your account to access the full version.</h4>
-							<Form.Group className='username' controlId='formGroupEmail'>
-								<Form.Control type='email' placeholder='Username' />
+							<Form.Group controlId='formGroupEmail'>
+								<Form.Control className='username' type='email' placeholder='Username' />
 							</Form.Group>
-							<Form.Group className='password' controlId='formGroupPassword'>
-								<Form.Control type='password' placeholder='Password' />
+							<Form.Group controlId='formGroupPassword'>
+								<Form.Control className='password' type='password' placeholder='Password' />
 							</Form.Group>
-							<Button variant='primary' type='submit'>
+							<Button className='loginbtn' variant='primary' type='submit'>
 								LOGIN
 							</Button>
 						</Form>
