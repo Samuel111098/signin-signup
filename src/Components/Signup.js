@@ -12,47 +12,55 @@ const Signup = () => {
 				<Row className='signupintro'>
 					<Col>
 						<h1>Sign Up</h1>
-						<h3>Create an account to access the full version of with all the features.</h3>
+						<h4>Create an account to access the full version of with all the features.</h4>
 					</Col>
 				</Row>
 				<Form>
-					<Row>
-						<Col md={4} />
+					<Row className='box1'>
+						<Col className='icon' md={4}>
+							<i className='fa fa-calendar' />
+						</Col>
 						<Col md={8}>
-							<h2>What is your date of birth?</h2>
+							<p>What is your date of birth?</p>
 							<Form.Group controlId='formdob'>
-								<Form.Control type='text' placeholder='DD / MM / YY' />
+								<Form.Control className='field' type='text' placeholder='DD / MM / YY' />
 							</Form.Group>
 						</Col>
 					</Row>
-					<Row>
-						<Col md={4} />
+					<Row className='box1'>
+						<Col className='icon' md={4}>
+							<i className='fa fa-suitcase' />
+						</Col>
 						<Col md={8}>
-							<h2>What is your occupation?</h2>
+							<p>What is your occupation?</p>
 							<Form.Group controlId='formocc'>
-								<Form.Control type='text' placeholder='Enter your occupation' />
+								<Form.Control className='field' type='text' placeholder='Enter your occupation' />
 							</Form.Group>
 						</Col>
 					</Row>
-					<Row>
-						<Col md={4} />
+					<Row className='box1'>
+						<Col className='icon' md={4}>
+							<i className='fa fa-id-card' />
+						</Col>
 						<Col md={8}>
-							<h2>What is your social security number?</h2>
+							<p>What is your social security number?</p>
 							<Form.Group controlId='formscn'>
-								<Form.Control type='text' placeholder='xxx-xxx-xxx' />
+								<Form.Control className='field' type='text' placeholder='xxx-xxx-xxx' />
 							</Form.Group>
 						</Col>
 					</Row>
-					<Row>
-						<Col md={4} />
+					<Row className='box1'>
+						<Col className='icon' md={4}>
+							<i class='fa fa-address-book' />
+						</Col>
 						<Col md={8}>
-							<h2>What is your income tax number?</h2>
+							<p>What is your income tax number?</p>
 							<Form.Group controlId='formictn'>
-								<Form.Control type='text' placeholder='Enter your tax number' />
+								<Form.Control className='field' type='text' placeholder='Enter your tax number' />
 							</Form.Group>
 						</Col>
 					</Row>
-					<Button variant='primary' type='submit'>
+					<Button className='signupbtn' variant='primary' type='submit'>
 						NEXT
 					</Button>
 				</Form>
